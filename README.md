@@ -13,6 +13,12 @@ OpenPLC Runtime (Docker)  <-- Modbus TCP :502 -->  cella_esecutore.py  -- ZMQ re
          '-- plc_cmd.py   (terminal commands: run, stop, pieces, mode, ...)
 ```
 
+## Demo
+[![Demo: five cubes picked and placed](docs/demo.gif)](docs/demo.mp4)
+
+Click the animation to open the full video (`docs/demo.mp4`): the PLC drives the UR5 through a
+five-piece run in CoppeliaSim.
+
 ## Features
 - PLC state machine: IDLE / RUNNING / STOPPED / ALARM, with a 30 s watchdog (TON) on the robot feedback
 - 10-step pick-and-place sequence decided by the PLC (`cmd_step`), acknowledged by the robot (`done_step`)
